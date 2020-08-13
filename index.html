@@ -26,7 +26,9 @@
 						</a>
 					</div>
 					<ul class="link-menu list">
-						<li class="item"><a href="https://ljubik.github.io/goit-markup-hw-04/index.html">Cтудия</a></li>
+						<li class="item">
+							<a href="https://ljubik.github.io/goit-markup-hw-04/index.html" class="current">Cтудия</a>
+						</li>
 						<li class="item"><a href="portfolio.html">Портфолио</a></li>
 						<li class="item"><a href="#contacts">Контакты</a></li>
 					</ul>
@@ -62,12 +64,16 @@
 			<!-- розділ hero -->
 			<section class="hero flex" title="Order a service">
 				<div class="container">
-					<!-- <div class="wrapper"> -->
 					<div class="hero-center">
 						<h1 class="hero-high-text">Эффективные решения для вашего бизнеса</h1>
-						<button class="btn-hero">Заказать услугу</button>
+						<button class="btn-hero" data-modal-open>Заказать услугу</button>
+						<div class="backdrop is-hidden" data-modal>
+							<div class="modal">
+								<p>Modal Text</p>
+								<button class="btn-close" data-modal-close>Close</button>
+							</div>
+						</div>
 					</div>
-					<!-- </div> -->
 				</div>
 			</section>
 			<!-- розділ benefits -->
