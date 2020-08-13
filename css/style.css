@@ -68,7 +68,7 @@ header {
 }
 
 .is-hidden {
-	display: none;
+	display: none;n
 }
 
 .flex {
@@ -173,7 +173,7 @@ header {
 
 .item {
 	margin-right: 50px;
-	position: relative;
+	/* position: relative; */
 }
 
 .current::after {
@@ -243,6 +243,12 @@ header {
 }
 
 .backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: var(--light-color);
+	pointer-events: none;
 	/* background-color: var(--light-color);
 	height: 80%;
 	width: 80%;
@@ -250,7 +256,24 @@ header {
 	align-items: center;
 	justify-content: center;
 	margin: 0 auto; */
-	z-index: 1;
+
+	z-index: 100;
+}
+
+.modal {
+	width: 80%;
+	max-width: 528px;
+	height: 80%;
+	padding: 80px 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.modal p {
+	font-size: 24px;
 }
 
 .btn-close {
@@ -259,7 +282,6 @@ header {
 	font-size: 16px;
 	line-height: 1.875;
 	display: flex;
-	align-items: center;
 	color: var(--light-color);
 	border: none;
 	border-radius: 4px;
@@ -375,6 +397,7 @@ header {
 
 .we-do-item {
 	width: calc((100% - 30px * 2) / 3);
+	position: relative;
 }
 
 .we-do-item:nth-child(even) {
@@ -384,7 +407,7 @@ header {
 
 .we-do-fig figcaption {
 	font-size: 14px;
-	display: none;
+	/* display: none; */
 	line-height: 1.143;
 	text-transform: uppercase;
 	text-align: center;
@@ -397,6 +420,8 @@ header {
 	justify-content: center;
 	background-color: var(--bkg-card-color);
 	color: var(--light-color);
+	position: absolute;
+	width: 100%;
 }
 
 .team {
