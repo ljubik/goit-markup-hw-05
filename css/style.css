@@ -67,10 +67,6 @@ header {
 	margin-right: auto;
 }
 
-.is-hidden {
-	display: none;n
-}
-
 .flex {
 	display: flex;
 }
@@ -242,61 +238,8 @@ header {
 	align-items: center;
 }
 
-.backdrop {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	background-color: var(--light-color);
-	pointer-events: none;
-	/* background-color: var(--light-color);
-	height: 80%;
-	width: 80%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 auto; */
-
-	z-index: 100;
-}
-
-.modal {
-	width: 80%;
-	max-width: 528px;
-	height: 80%;
-	padding: 80px 40px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-}
-
-.modal p {
-	font-size: 24px;
-}
-
-.btn-close {
-	margin: 0 auto;
-	font-weight: bold;
-	font-size: 16px;
-	line-height: 1.875;
-	display: flex;
-	color: var(--light-color);
-	border: none;
-	border-radius: 4px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	background: var(--link-color);
-	width: 200px;
-	padding: 10px;
-	justify-content: center;
-	align-items: center;
-}
-
 .btn-hero:hover,
 .btn-hero:focus,
-.btn-close:hover,
-.btn-close:focus,
 .btn-subscribe:hover,
 .btn-subscribe:focus {
 	background: var(--link-color);
@@ -307,7 +250,6 @@ header {
 }
 
 .btn-hero:active,
-.btn-close:active,
 .btn-subscribe:active {
 	border: none;
 }
@@ -686,6 +628,65 @@ form {
 	margin-right: 16px;
 	background-image: url(../images/icon/icon_send.svg);
 	background-repeat: no-repeat;
+}
+
+/* *[ Modal window style ]* */
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	background-color: rgba(25, 28, 38, 0.8);
+	pointer-events: none;
+	z-index: 100;
+	opacity: 1;
+
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+	visibility: hidden;
+	/* pointer-events: none; */
+	opacity: 0;
+}
+
+.backdrop.is-hidden .modal {
+	transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal {
+	width: 80%;
+	display: flex;
+	max-width: 528px;
+	height: 80%;
+	padding: 80px 40px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%) scale(1);
+
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	background-color: #f7f7f7;
+	padding: 80px 40px;
+}
+
+.modal p {
+	font-size: 24px;
+}
+
+.btn-close-modal {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 2px solid var(--dark-color);
+	background-color: var(--icon-color);
+	color: var(--light-color);
+	cursor: pointer;
+	z-index: 101;
 }
 
 /* *[ Portfolio page style ]* */
