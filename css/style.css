@@ -165,6 +165,7 @@ header {
 .link-contact svg:focus {
 	color: var(--link-color);
 	--icon-color: var(--link-color);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item {
@@ -261,6 +262,11 @@ header {
 	box-shadow: 0px 4px 4px var(--link-color);
 	cursor: pointer;
 	border: none;
+	/*ефект зникання*/
+	/* transform: scale(2, 0.5);  */
+	/* opacity: 0; */
+	transform: translate(1px, 7%);
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:active,
@@ -491,6 +497,8 @@ header {
 	--icon-color: var(--light-color);
 	background: var(--link-color);
 	border-radius: 50%;
+	opacity: 1;
+	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -540,6 +548,8 @@ header {
 .link-clients:focus {
 	border: 1px solid var(--link-color);
 	--icon-color: var(--link-color);
+	opacity: 1;
+	transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -732,6 +742,7 @@ form {
 	border: 2px solid var(--link-color);
 	color: var(--light-color);
 	cursor: pointer;
+	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-gallery {
