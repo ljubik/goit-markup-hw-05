@@ -50,6 +50,8 @@ a:hover,
 a:focus {
 	color: var(--link-color);
 	fill: var(--link-color);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link {
@@ -165,7 +167,7 @@ header {
 .link-contact svg:focus {
 	color: var(--link-color);
 	--icon-color: var(--link-color);
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item {
@@ -259,13 +261,14 @@ header {
 .btn-subscribe:focus {
 	background: var(--link-color);
 	border-radius: 4px;
-	box-shadow: 0px 4px 4px var(--link-color);
+	/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+	box-shadow: 0px 4px 4px var(--dark-color);
 	cursor: pointer;
 	border: none;
 	/*ефект зникання*/
 	/* transform: scale(2, 0.5);  */
 	/* opacity: 0; */
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:active,
@@ -549,7 +552,7 @@ header {
 	border: 1px solid var(--link-color);
 	--icon-color: var(--link-color);
 	opacity: 1;
-	transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
@@ -714,7 +717,7 @@ form {
 }
 
 .btn-close-modal:hover {
-	background-color: var(--icon-color);
+	background-color: var(--body-color);
 	transition: background-color 0.2s ease-in;
 }
 
@@ -743,11 +746,12 @@ form {
 
 .btn:hover,
 .btn:focus {
-	background: var(--link-color);
+	background-color: var(--link-color);
 	border: 2px solid var(--link-color);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 	color: var(--light-color);
 	cursor: pointer;
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-gallery {
