@@ -677,7 +677,7 @@ form {
 	bottom: 0;
 	width: 100%;
 	background-color: rgba(25, 28, 38, 0.8);
-	pointer-events: none;
+	pointer-events: initial;
 	z-index: 100;
 	opacity: 1;
 
@@ -696,7 +696,7 @@ form {
 
 .modal {
 	width: 528px;
-	/* display: flex; */
+	display: flex;
 	min-width: 528px;
 	height: 80%;
 	padding: 80px 40px;
