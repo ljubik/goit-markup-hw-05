@@ -486,8 +486,7 @@ figure {
 
 .team-card {
 	flex-wrap: nowrap;
-	margin-left: 10px;
-	margin-right: 10px;
+	padding-right: 10px;
 }
 
 .team-card svg {
@@ -599,10 +598,8 @@ footer {
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
 	flex-wrap: nowrap;
-	margin-top: 30px;
-	margin-left: 10px;
+	margin-top: 20px;
 	margin-right: 10px;
-	margin-bottom: 30px;
 }
 
 .foot-subscribe {
