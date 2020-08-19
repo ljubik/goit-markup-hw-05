@@ -444,7 +444,7 @@ figure {
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 30px;
-	padding-bottom: 18px;
+	padding-bottom: 30px;
 	flex-direction: column;
 }
 
@@ -480,14 +480,14 @@ figure {
 	line-height: 1.875;
 	color: var(--body-color);
 	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .team-card {
 	flex-wrap: nowrap;
-	margin-top: 30px;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-bottom: 30px;
 }
 
 .team-card svg {
@@ -598,6 +598,11 @@ footer {
 .foot-social-card {
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
+	flex-wrap: nowrap;
+	margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 30px;
 }
 
 .foot-subscribe {
