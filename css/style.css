@@ -548,8 +548,6 @@ figure {
 
 .clients-logo svg {
 	display: flex;
-	/* width: 40px;
-	height: 40px; */
 	justify-content: center;
 }
 
@@ -558,7 +556,8 @@ figure {
 	border: 1px solid var(--link-color);
 	--icon-color: var(--link-color);
 	opacity: 1;
-	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 footer {
