@@ -598,8 +598,11 @@ footer {
 	background: rgba(255, 255, 255, 0.1);
 	border-radius: 50%;
 	flex-wrap: nowrap;
-	margin-top: 20px;
+	/* padding-top: 20px;
+	padding-right: 10px; */
 	margin-right: 10px;
+	width: 44px;
+	height: 44px;
 }
 
 .foot-subscribe {
