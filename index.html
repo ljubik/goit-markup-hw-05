@@ -590,10 +590,13 @@
 						</li>
 						<li class="foot-subscribe">
 							<h4>Подпишитесь на рассылку</h4>
-							<form action="/" id="usrform">
-								<input type="text" placeholder="e-mail" class="inpt-mail" name="usrname" />
-								<button class="btn-subscribe">
+							<form action="#" method="post" id="usrform">
+								<input type="email" name="email" class="inpt-mail" id="mail" placeholder="E-mail" />
+								<button class="btn-subscribe sub-button button" type="submit">
 									Подписаться
+									<svg width="24" height="24">
+										<use href="./images/icons.svg#icon_telegram"></use>
+									</svg>
 								</button>
 							</form>
 						</li>
