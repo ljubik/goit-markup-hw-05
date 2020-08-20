@@ -747,6 +747,10 @@ form {
 	width: 30px;
 	height: 30px;
 	border-radius: 50%;
+	padding-top: 9px;
+	padding-left: 9px;
+	padding-right: 9px;
+	padding-bottom: 9px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	/* border: 1px solid var(--dark-color); */
 	background-color: var(--light-color);
@@ -755,11 +759,14 @@ form {
 	z-index: 302;
 }
 
-.btn-close-modal svg {
+/* .btn-close-modal > svg {
 	display: flex;
 	justify-items: center;
 	align-content: center;
-}
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+} */
 
 .btn-close-modal:hover,
 .btn-close-modal:focus {
